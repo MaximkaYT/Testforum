@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форум L7</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Форум L7</h1>
+        <button id="toggle-theme">🌙 Тёмная тема</button>
+        <div class="post-form">
+            <input type="text" id="username" placeholder="Ваше имя (необязательно)">
+            <textarea id="message" placeholder="Введите ваше сообщение..."></textarea>
+            <button onclick="addPost()">Опубликовать</button>
+        </div>
+        <div id="posts"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

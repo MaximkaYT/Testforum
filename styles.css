@@ -1,0 +1,98 @@
+/* Светлая тема */
+:root {
+    --bg-color: #f8f9fa;
+    --text-color: #333;
+    --container-bg: white;
+    --post-border: #007bff;
+    --button-bg: #007bff;
+    --button-hover: #0056b3;
+}
+
+/* Тёмная тема */
+.dark-theme {
+    --bg-color: #121212;
+    --text-color: #f8f9fa;
+    --container-bg: #1e1e1e;
+    --post-border: #0d6efd;
+    --button-bg: #0d6efd;
+    --button-hover: #084298;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: var(--container-bg);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+#toggle-theme {
+    display: block;
+    margin: 0 auto 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background: var(--button-bg);
+    color: white;
+    border-radius: 5px;
+}
+
+#toggle-theme:hover {
+    background: var(--button-hover);
+}
+
+.post-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background: var(--button-bg);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: var(--button-hover);
+}
+
+.post {
+    background: var(--container-bg);
+    padding: 10px;
+    margin-top: 10px;
+    border-left: 4px solid var(--post-border);
+    border-radius: 5px;
+}
+
+.post .author {
+    font-weight: bold;
+}
+
+.post .content {
+    margin-top: 5px;
+}
